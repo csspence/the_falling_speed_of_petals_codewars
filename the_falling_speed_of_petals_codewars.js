@@ -12,6 +12,9 @@ Pay attention to the data types.
 If the initial velocity is non-positive, the return value should be 0
 */
 
-function sakuraFall(v) {
-
+const sakuraFall = (v) => {
+  if(v < 0 || v === 0) {
+    return 0;
+  }
+  return 400 / v;
 }
